@@ -18,4 +18,13 @@ public class myapp {
             System.out.println(province);
         }
     }
+
+    @Test
+    public void testInsert(){
+        SqlSession sqlSession = MybaitsUtils.getSqlSession();
+        ProvinceDao mapper = sqlSession.getMapper(ProvinceDao.class);
+        int i = mapper.insertProvince(10, "湖南", "湘", "长沙");
+        sqlSession.commit();
+
+    }
 }

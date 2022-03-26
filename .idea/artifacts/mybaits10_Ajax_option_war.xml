@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mybaits10-Ajax-option:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>mybaits10-Ajax-option</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="mybaits09-Ajax-shujuku.war">
+      <element id="artifact" artifact-name="mybaits10-Ajax-option:war exploded" />
+    </root>
+  </artifact>
+</component>
